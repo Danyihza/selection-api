@@ -18,4 +18,8 @@ class User extends Model
         'no_telp_ortu',
         'isAccepted'
     ];
+
+    protected $casts = [
+        'isAccepted' => 'int'
+    ];
 }
